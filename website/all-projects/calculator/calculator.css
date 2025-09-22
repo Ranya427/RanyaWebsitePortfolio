@@ -1,0 +1,51 @@
+body{
+  background-color: mistyrose;
+}
+h1{
+  color: silver;
+  text-align: center;
+  font-size: 50px;
+  font-family: georgia;
+}
+div{
+  color: silver;
+  font-family: georgia;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator{
+  background: thistle;
+  padding: 20px;
+  border-radius: 20px;
+}
+.calculator form input{
+  width: 55px;
+  height: 55px;
+  margin: 2px;
+  border-color: silver;
+  border-radius: 5px;
+  font-size: 30px;
+  color: silver;
+  background: seashell;
+}
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+form .display input{
+  text-align: right;
+  flex: 1;
+}
+form input.equal{
+  width: 118px;
+}
+form input.delete{
+  width: 118px;
+}
+form input.operator{
+  color: lightsteelblue;
+}

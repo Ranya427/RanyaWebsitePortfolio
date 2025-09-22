@@ -1,0 +1,103 @@
+body{
+  background-color:#9694c4; /*40% tint from the saved blue*/
+}
+
+h1{
+  text-align:center;
+  text-shadow: 1px 1px 1px #2e2b5d; /*40% shade from the saved blue*/
+  color:#9694c4;
+  font-family:georgia;
+  font-size:300%;
+  margin-top:0;
+}
+h2{
+  color:#9694c4;
+  text-shadow: 0.5px 0.5px 0.5px #2e2b5d;
+  font-family:georgia;
+  font-size:150%
+}
+h3{
+  text-align: left;
+  color:#ab89c1; /*40% tint from the saved purple*/
+  font-family:georgia;
+  font-size:125%
+}
+p{
+  color:#ab89c1;
+  font-family:georgia;
+  font-size:180%;
+}
+.border{
+  border: 10px solid #9694c4; /* add a border */
+}
+.row1{
+  display:flex;
+  background-color: #cbc9e1; /*70% tint from the saved blue*/
+}
+.row2{
+  display:flex;
+  background-color: #d5c4e0; /*70% tint from the saved purple*/
+}
+.column{
+  flex:33.33%;
+  padding:5px; 
+}
+.img{
+  padding:5px;
+}
+iframe{
+  opacity:0.8;
+}
+a{
+  color:#ab89c1; /*40% tint from the saved blue*/
+}
+img{
+  box-shadow: 5px 5px 5px #2e2b5d;
+  border-radius:100px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  opacity:0.8;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid thistle;
+  border-radius: 50%;
+  border-top: 16px solid silver;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+#myDiv {
+  display: none;
+  text-align: center;
+}
